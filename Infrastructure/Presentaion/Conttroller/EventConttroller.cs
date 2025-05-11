@@ -56,7 +56,7 @@ namespace Presentaion.Conttroller
             var result = await _eventService.SearchEventsAsync(keyword);
             return Ok(result);
         }
-
+        //-------------
         [HttpGet("daterange")]
         public async Task<IActionResult> GetByDateRange([FromQuery] DateTime start, [FromQuery] DateTime end)
         {
