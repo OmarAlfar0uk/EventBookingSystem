@@ -106,8 +106,7 @@ EventBookingSystem/
 ├── Infrastructure/
 │   └── Presentation/            # Presentation API Controllers (BookingController, UserController)
 ├── EventBookingSystem/          # Host application, Startup DI configuration & middlewares
-│   ├── Program.cs
-│   └── appsettings.json
+│   └── Program.cs
 └── EventBookingSystem.sln
 ```
 
@@ -127,17 +126,9 @@ EventBookingSystem/
    cd EventBookingSystem
    ```
 
-2. **Configure Connection String in `appsettings.json`:**
-   ```json
-   {
-     "ConnectionStrings": {
-       "DefaultConnection": "Server=localhost;Database=EventBookingDb;Trusted_Connection=True;TrustServerCertificate=True;"
-     }
-   }
-   ```
-
-3. **Launch the Web API:**
+2. **Launch the Web API:**
    ```bash
+   dotnet restore
    dotnet run --project EventBookingSystem/EventBookingSystem.csproj
    ```
 
